@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Historical Alternative Realities Generator</title>
+</head>
+<body>
+    <h1>Select a Scenario</h1>
+    <form action="/generate" method="post">
+        <select name="scenario_id">
+            {% for scenario in scenarios %}
+                <option value="{{ scenario.id }}">{{ scenario.description }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">Generate Narrative</button>
+    </form>
+</body>
+</html>
