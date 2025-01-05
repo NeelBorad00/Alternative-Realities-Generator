@@ -25,3 +25,9 @@ The **Historical Alternative Realities Generator** is a web-based application th
 To get started, clone this repository to your local machine:
 ```bash
 git clone https://github.com/your-username/historical-alternative-realities-generator.git
+```
+### **2. Run requirements.txt**
+To install the required libraries on your machine.
+
+### **3. Run app.py**
+A local web address will appear in the output panel. Ctrl+click the link to open the webpage. Enter or select any prompt and watch the magic unfold!
