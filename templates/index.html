@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Historical Alternative Realities Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>Enter a "What if?" Scenario</h1>
+    <form action="/generate" method="post">
+        <input type="text" placeholder="Enter a 'What if' scenario inspired by the example provided below..."
+
+        name="scenario_id">
+        
+            {% for scenario in scenarios %}
+                
+            {% endfor %}
+    </input>
+    <p id="ex">eg. What if electricity was never discovered? How would human civilization have evolved?</p>
+        <button type="submit">Generate Narrative</button>
+    </form>
+</body>
+</html>

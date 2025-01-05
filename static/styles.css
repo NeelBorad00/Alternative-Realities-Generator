@@ -1,0 +1,132 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    background: #f5f2eb;
+    color: #2c2c2c;
+    padding: 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #483d3f;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: normal;
+    border-bottom: 2px solid #a39081;
+    padding-bottom: 0.5rem;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+select,input {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    border: 1px solid #a39081;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    font-family: inherit;
+}
+input::placeholder {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+select:focus,input:focus {
+    outline: none;
+    border-color: #483d3f;
+    box-shadow: 0 0 0 2px rgba(72, 61, 63, 0.2);
+}
+#ex{
+    color: #483d3f;
+    font-size: 12px; /* Adjust the font size as needed */
+    background: white;
+    box-shadow: none;
+    border: none;
+    margin: 0%;
+    padding:0%;
+}
+/* #ex:hover{
+    background-color: #450a15;
+
+} */
+button {
+    background-color: #483d3f;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    font-family: inherit;
+}
+
+button:hover {
+    background-color: #5c4f51;
+}
+
+/* Styles for the result page */
+p {
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+a {
+    color: #483d3f;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #483d3f;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: #483d3f;
+    color: white;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form, p {
+        padding: 1.5rem;
+    }
+}
