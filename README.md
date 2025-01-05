@@ -7,6 +7,11 @@ The **Historical Alternative Realities Generator** is a web-based application th
 - **Backend**: Flask-based web framework that processes user inputs and generates narratives using the DistilGPT2 AI model.
 - **Database**: SQLite is used to store predefined scenarios and generated narratives.
 
+## **Snapshots**
+![Prompt Image](./images/prompt.png)
+![Result Image](./images/result.png)
+
+
 ## **How It Works**
 1. **User selects a historical scenario** from a dropdown list.
 2. **AI generates a narrative** based on the selected scenario using a pre-trained language model (DistilGPT2).
@@ -28,6 +33,12 @@ git clone https://github.com/your-username/historical-alternative-realities-gene
 ```
 ### **2. Run requirements.txt**
 To install the required libraries on your machine.
+```bash
+pip install -r requirements.txt
+```
 
 ### **3. Run app.py**
+```bash
+python app.py
+```
 A local web address will appear in the output panel. Ctrl+click the link to open the webpage. Enter or select any prompt and watch the magic unfold!
